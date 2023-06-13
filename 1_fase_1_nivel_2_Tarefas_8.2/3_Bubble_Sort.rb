@@ -1,8 +1,6 @@
-require 'pry-byebug'
 ARRAY = [2,27,48,92,5,1,9,12,22,30,29,19,88]
 
 def bubble_sort(array)
-  # binding.pry
   j = 0
   while j < array.size
     maior = 0

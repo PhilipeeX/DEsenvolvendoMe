@@ -8,7 +8,8 @@
       "type": "rdbg",
       "name": "Debug current file with rdbg",
       "request": "launch",
-      "script": "${workspaceFolder}/2_Binary_Search.rb",
+      "cwd": "${workspaceRoot}",
+      "script": "1_fase_1_nivel_2_Tarefas_8.2/3_Bubble_Sort.rb",
       "args": [],
       "askParameters": true
     },
