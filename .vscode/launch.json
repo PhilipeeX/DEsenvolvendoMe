@@ -9,7 +9,7 @@
       "name": "Debug current file with rdbg",
       "request": "launch",
       "cwd": "${workspaceRoot}",
-      "script": "1_fase_1_nivel_2_Tarefas_8.2/5_Minimum_sum_of_pairs.rb",
+      "script": "1_fase_1_nivel_2_Tarefas_8.2/6_Maximize_array_sum_after_K_negations.rb",
       "args": [],
       "askParameters": true
     },
