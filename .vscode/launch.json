@@ -9,7 +9,7 @@
       "name": "Debug current file with rdbg",
       "request": "launch",
       "cwd": "${workspaceRoot}",
-      "script": "1_fase_1_nivel_2_Tarefas_8.2/3_Bubble_Sort.rb",
+      "script": "1_fase_1_nivel_2_Tarefas_8.2/5_Minimum_sum_of_pairs.rb",
       "args": [],
       "askParameters": true
     },
