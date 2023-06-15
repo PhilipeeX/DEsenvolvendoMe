@@ -1,9 +1,8 @@
-
 def missing_characters(string)
-  alfabeto = Array('a'..'z')
+  alphabet = ('a'..'z').to_a
 
-  string.downcase.gsub(/[^a-z]/, '').split('').uniq.each do |letra|
-    alfabeto.delete(letra)
-  end
-  alfabeto.join('')
+  present_letters = string.downcase.scan(/[a-z]/).uniq
+  alphabet -= present_letters
+
+  alphabet.join('')
 end
