@@ -3,9 +3,9 @@ def missing_characters(string)
   alfabeto = Array('a'..'z')
 
   string.downcase.gsub(/[^a-z]/, '').split('').uniq.each do |letra|
-
+    alfabeto.delete(letra)
   end
-
+  alfabeto.join('')
 end
 
-p missing_characters('welcome to geeksforgeeks 982012480 =--%¨&$¨&@#¨*(!@#Uaaaaaaaaa)')
+p missing_characters('The quick brown fox jumps')
