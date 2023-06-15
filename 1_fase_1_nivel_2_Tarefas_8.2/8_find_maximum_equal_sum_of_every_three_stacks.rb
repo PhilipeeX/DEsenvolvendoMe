@@ -1,16 +1,22 @@
-@stack1 = [3, 2, 1, 1, 1]
-@stack2 = [4, 3, 2]
-@stack3 = [1, 1, 4, 1]
+@stack1 = [1, 2, 1, 1]
+@stack2 = [1, 1, 3, 1]
+@stack3 = [2, 3, 1, 1]
 
 def find_maximum_equal_sum(stack1, stack2, stack3)
 
-  if stack1.sum == stack2.sum && stack2.sum == stack3.sum
-    stack1.sum
-  else
-    sums = [stack1, stack2, stack3]
-    sums.max
+  until stack1.length.zero? || stack2.length.zero? || stack3.length.zero?
+    if stack1.sum == stack2.sum && stack2.sum == stack3.sum
+      return stack1.sum
+    elsif stack1.sum > stack2.sum && stack1.sum > stack3.sum
+      stack1.shift
+    elsif stack2.sum > stack1.sum && stack2.sum > stack3.sum
+      stack2.shift
+    elsif stack3.sum > stack1.sum && stack3.sum > stack2.sum
+      stack3.shift
+    end
   end
 
+  0
 end
 
-find_maximum_equal_sum(@stack1, @stack2, @stack3)
+puts find_maximum_equal_sum(@stack1, @stack2, @stack3)

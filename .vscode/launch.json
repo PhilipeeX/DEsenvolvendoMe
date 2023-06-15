@@ -9,7 +9,7 @@
       "name": "Debug current file with rdbg",
       "request": "launch",
       "cwd": "${workspaceRoot}",
-      "script": "1_fase_1_nivel_2_Tarefas_8.2/7_minimum_product_subset_of_an_array.rb",
+      "script": "1_fase_1_nivel_2_Tarefas_8.2/8_find_maximum_equal_sum_of_every_three_stacks.rb",
       "args": [],
       "askParameters": true
     },
