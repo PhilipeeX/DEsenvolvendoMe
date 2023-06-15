@@ -5,13 +5,14 @@ def count(string)
   number = 0
 
   string.gsub(' ', '').split('').each do |character|
-    if character.match?(/[a-z]/)
+    case character
+    when /[a-z]/
       lowercase += 1
-    elsif character.match?(/[A-Z]/)
+    when /[A-Z]/
       uppercase += 1
-    elsif character.match?(/\W/)
+    when /\W/
       special += 1
-    elsif character.match?(/\d/)
+    when /\d/
       number += 1
     end
   end
