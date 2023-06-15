@@ -3,8 +3,7 @@
 @stack3 = [2, 3, 1, 1]
 
 def find_maximum_equal_sum(stack1, stack2, stack3)
-
-  until stack1.length.zero? || stack2.length.zero? || stack3.length.zero?
+  until stack1.empty? || stack2.empty? || stack3.empty?
     if stack1.sum == stack2.sum && stack2.sum == stack3.sum
       return stack1.sum
     elsif stack1.sum > stack2.sum && stack1.sum > stack3.sum
