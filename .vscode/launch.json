@@ -9,7 +9,7 @@
       "name": "Debug current file with rdbg",
       "request": "launch",
       "cwd": "${workspaceRoot}",
-      "script": "1_fase_1_nivel_2_Tarefas_8.2/9_missing_characters_to_make_a_string_pangram.rb",
+      "script": "1_fase_1_nivel_2_Tarefas_8.2/10_count_uppercase_lowercase_special_number.rb",
       "args": [],
       "askParameters": true
     },
