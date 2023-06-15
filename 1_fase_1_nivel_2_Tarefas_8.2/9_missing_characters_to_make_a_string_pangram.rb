@@ -7,5 +7,3 @@ def missing_characters(string)
   end
   alfabeto.join('')
 end
-
-p missing_characters('The quick brown fox jumps')
