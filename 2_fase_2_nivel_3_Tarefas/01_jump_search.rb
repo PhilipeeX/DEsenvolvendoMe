@@ -1,20 +1,22 @@
-@sorted_array = [0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377, 610]
-
 def jump_search(array, element)
-  jumps = Math.sqrt(array.size)
-  
+  jumps = Math.sqrt(array.size).to_i - 1
+
   i = 0
-  while array[i] < element do i += jumps end
+  return i if array[i] == element
+
+  while array[i] < element 
+    i += jumps 
+  end
 
   j = i
   i -= jumps
-  while array[i] != array[j]
+  while array[i] != array[j + 1]
     return i if array[i] == element
 
     i += 1
   end
 
-  -1
+  nil
 end
-
-p jump_search(@sorted_array, 55)
+@array = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+puts jump_search(@array, 11)

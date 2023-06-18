@@ -9,7 +9,7 @@
       "name": "Debug current file with rdbg",
       "request": "launch",
       "cwd": "${workspaceRoot}",
-      "script": "1_fase_1_nivel_2_Tarefas_8.2/11_reversal_algorithm_for_right_rotation_of_an_array.rb",
+      "script": "2_fase_2_nivel_3_Tarefas/01_jump_search.rb",
       "args": [],
       "askParameters": true
     },
