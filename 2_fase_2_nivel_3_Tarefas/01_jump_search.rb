@@ -1,13 +1,14 @@
 def jump_search(array, element)
-  jumps = Math.sqrt(array.size).to_i - 1
+  jumps = Math.sqrt(array.size).to_i
 
   i = 0
-  return i if array[i] == element
-
-  while array[i] < element 
-    i += jumps 
+  while array[[array.size, i].min - 1] < element && i < array.size
+    i += jumps
   end
 
+  if i >= array.size
+    i = array.size - 1
+  end
   j = i
   i -= jumps
   while array[i] != array[j + 1]
@@ -18,5 +19,5 @@ def jump_search(array, element)
 
   nil
 end
-@array = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-puts jump_search(@array, 11)
+@array = [0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377, 610]
+puts jump_search(@array, 55)
