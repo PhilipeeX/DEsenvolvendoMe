@@ -9,7 +9,7 @@
       "name": "Debug current file with rdbg",
       "request": "launch",
       "cwd": "${workspaceRoot}",
-      "script": "2_fase_2_nivel_3_Tarefas/01_jump_search.rb",
+      "script": "2_fase_2_nivel_3_Tarefas/02_find_the_missing_number.rb",
       "args": [],
       "askParameters": true
     },
