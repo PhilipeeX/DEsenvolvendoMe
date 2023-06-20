@@ -1,5 +1,3 @@
-@array = [9, 8, 8, 5]
-
 def maximum_sum(array, k)
   array.sort!
 
@@ -11,5 +9,3 @@ def maximum_sum(array, k)
 
   array.sum
 end
-
-puts maximum_sum(@array, 3)

@@ -1,5 +1,3 @@
-@array = [2, 4, 1, 3]
-
 def minimum_sum(array)
   array2 = []
   while array.length > 1
@@ -15,5 +13,3 @@ def minimum_sum(array)
   end
   array2.sum
 end
-
-minimum_sum(@array)
