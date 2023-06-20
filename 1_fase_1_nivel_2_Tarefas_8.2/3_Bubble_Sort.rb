@@ -1,5 +1,3 @@
-ARRAY = [2,27,48,92,5,1,9,12,22,30,29,19,88]
-
 def bubble_sort(array)
   j = 0
   while j < array.size
@@ -16,7 +14,5 @@ def bubble_sort(array)
     end
     j += 1
   end
-  p array
+  array
 end
-
-bubble_sort(ARRAY)
