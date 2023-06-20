@@ -1,8 +1,7 @@
 def selection_sort(arr)
   arr.map do |element|
-    teste = arr[0]
+    temp = arr.slice(arr.index(element), arr.length).min
+    arr[arr.index(element)], arr[arr.index(temp)] = temp , element
   end
+  arr
 end
-
-@array = [64, 25, 12, 22, 11]
-selection_sort(@array)
